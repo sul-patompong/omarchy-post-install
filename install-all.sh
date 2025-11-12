@@ -54,6 +54,7 @@ echo "5. ASDF"
 echo "6. Iosevka Font"
 echo "7. Claude Code"
 echo "8. Brave Browser"
+echo "9. Solaar"
 echo ""
 read -p "Continue? (y/n) " -n 1 -r
 echo ""
@@ -71,6 +72,7 @@ run_install "./install-asdf.sh" "ASDF"
 run_install "./install-iosevka-font.sh" "Iosevka Font"
 run_install "./install-claude-code.sh" "Claude Code"
 run_install "./install-brave.sh" "Brave Browser"
+run_install "./install-solarr.sh" "Solaar"
 
 # Final summary
 echo ""
