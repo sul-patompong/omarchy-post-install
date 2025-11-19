@@ -29,11 +29,14 @@ if [ $? -eq 0 ]; then
   # Below is the original config maybe need for references
   # rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
   rm -rf ~/.config/starship.toml
+  rm -rf ~/.zshrc
+  rm -rf ~/.config/fontconfig
 
   cd "$REPO_NAME"
   stow zshrc
   stow hypr
   stow ssh
+  stow fontconfig
 else
   echo "Failed to clone the repository."
   exit 1

@@ -41,28 +41,6 @@ run_install() {
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$SCRIPT_DIR"
 
-echo "=========================================="
-echo "  Linux Installation Master Script"
-echo "=========================================="
-echo ""
-echo "This script will install the following in sequence:"
-echo "1. Zsh"
-echo "2. Stow"
-echo "3. Dotfiles"
-echo "4. Hyprland Overrides"
-echo "5. ASDF"
-echo "6. Iosevka Font"
-echo "7. Claude Code"
-echo "8. Brave Browser"
-echo "9. Solaar"
-echo ""
-read -p "Continue? (y/n) " -n 1 -r
-echo ""
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    echo "Installation cancelled."
-    exit 0
-fi
-
 # Installation sequence
 run_install "./install-zsh.sh" "Zsh"
 run_install "./install-stow.sh" "Stow"
