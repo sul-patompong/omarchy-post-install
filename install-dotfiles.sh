@@ -28,7 +28,6 @@ if [ $? -eq 0 ]; then
   echo "removing old configs"
   # Below is the original config maybe need for references
   # rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
-  rm -rf ~/.config/starship.toml
   rm -rf ~/.config/fontconfig
   rm -rf ~/.bashrc
 
