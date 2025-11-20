@@ -30,11 +30,13 @@ if [ $? -eq 0 ]; then
   # rm -rf ~/.config/nvim ~/.config/starship.toml ~/.local/share/nvim/ ~/.cache/nvim/ ~/.config/ghostty/config
   rm -rf ~/.config/starship.toml
   rm -rf ~/.config/fontconfig
+  rm -rf ~/.bashrc
 
   cd "$REPO_NAME"
   stow hypr
   stow ssh
   stow fontconfig
+  stow bashrc
 else
   echo "Failed to clone the repository."
   exit 1
