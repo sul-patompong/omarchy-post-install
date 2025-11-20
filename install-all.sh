@@ -42,7 +42,6 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd "$SCRIPT_DIR"
 
 # Installation sequence
-run_install "./install-zsh.sh" "Zsh"
 run_install "./install-stow.sh" "Stow"
 run_install "./install-dotfiles.sh" "Dotfiles"
 run_install "./install-hyprland-overrides-config.sh" "Hyprland Overrides"
